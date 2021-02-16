@@ -83,7 +83,7 @@ public class Exercicio03 {
         //e)
         int codigo1=1;
         int codigo2=0;
-        int baixopeso=0;
+        int acimadopeso=0;
         /* for (int parafuso = 0; parafuso < 6; parafuso++) {
             baixopeso=(matriz[parafuso][0] < mediapeso) ? codigo1 : codigo2;
             
@@ -91,16 +91,16 @@ public class Exercicio03 {
         } System.out.println(baixopeso);*/
         
         for (int parafuso = 0; parafuso <matriz.length; parafuso++) {
-            if (matriz[parafuso][0] < mediapeso) {
+            if (matriz[parafuso][0] > mediapeso) {
                 matriz[parafuso][0]=codigo1;
-                baixopeso+=codigo1;
+                acimadopeso+=codigo1;
             } else {
                 matriz[parafuso][0]=codigo2;
                 
             }
             
-        } System.out.println(baixopeso + " parafusos estão com peso abaixo da média da amostra,"
-                + " o que representa " + (baixopeso*100/6) + " % da amostra.");   
+        } System.out.println(acimadopeso + " parafusos estão com peso acima da média da amostra,"
+                + " o que representa " + (acimadopeso*100/6) + " % da amostra.");   
            
     }     
     
