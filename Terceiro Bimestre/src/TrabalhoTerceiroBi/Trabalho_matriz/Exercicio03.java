@@ -84,12 +84,6 @@ public class Exercicio03 {
         int codigo1=1;
         int codigo2=0;
         int acimadopeso=0;
-        /* for (int parafuso = 0; parafuso < 6; parafuso++) {
-            baixopeso=(matriz[parafuso][0] < mediapeso) ? codigo1 : codigo2;
-            
-              
-        } System.out.println(baixopeso);*/
-        
         for (int parafuso = 0; parafuso <matriz.length; parafuso++) {
             if (matriz[parafuso][0] > mediapeso) {
                 matriz[parafuso][0]=codigo1;
